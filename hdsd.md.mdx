@@ -1,0 +1,60 @@
+---
+title: "New file"
+description: "Description of your new file."
+---
+
+
+# Hướng dẫn cài đặt phần mềm
+
+## 1. Cài đặt Redis
+
+- Mở file **Redis-x64-5.0.14.1.msi  **và tiến hành cài đặt.
+
+<Warning>
+  Cố định port 6379 trong quá trình cài đặt
+</Warning>
+
+## 2. Cài đặt Postgres 16
+
+- Mở file **postgresql-16.3-1-windows-x64.exe **và tiến hành cài đặt.
+
+<Note>
+  Lưu trữ thông tin đăng nhập, port trong quá trình cài đặt
+</Note>
+
+## 3. Cài đặt MinIO
+
+- Vào thư mục MinIO, chỉnh sửa đường dẫn lưu trữ ảnh
+- Điều chỉnh đường dẫn lưu trữ file và mật khẩu
+
+  ![Screenshot_6.png](/images/Screenshot_6.png)
+
+   
+- Chọn file install-service.ps1
+
+  <img
+    src="/images/image.png"
+    alt="image.png"
+    title="image.png"
+    style={{ width:"100%" }}
+  />
+- Sau khi cài đặt xong, vào Services tìm kiếm MinIO và khởi động service
+
+![Screenshot_5.png](/images/Screenshot_5.png)
+
+- Vào trình duyệt truy cập đường dẫn http://localhost:9000
+- Sử dụng tại khoản bên dưới để đăng nhập\
+  minio\
+  minio123
+- Tạo Access key như hình 
+
+  ![dsvsdv.png](/images/dsvsdv.png)
+
+![3432.png](/images/3432.png)
+
+## 4. Cài đặt VIME
+
+- Mở bộ cài VIME
+- Nhập tên mật khẩu Postgres vừa cài đặt **Bước 2** phía trên
+
+  ![Screenshot_7.png](/images/Screenshot_7.png)
